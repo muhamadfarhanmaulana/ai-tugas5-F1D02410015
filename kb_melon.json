@@ -1,0 +1,31 @@
+{
+  "judul": "Diagnosa Penyakit dan Hama Tanaman Melon",
+  "sumber": {
+    "S1": "Bambang Yuwono, Ario Wibowo, Dessyanto Boedi P (2013), Sistem Pakar Berbasis Web untuk Diagnosa Hama dan Penyakit Pada Tanaman Melon, https://jurnal.upnyk.ac.id/index.php/semnasif/article/view/964/0, diakses pada 13 November 2026",
+    "S2": "Zulkifli Arief (2018), Rancang Bangun Aplikasi Mobile Untuk Mendiagnosis Penyakit pada Tanaman Melon Menggunakan Metode Certainty Factor, https://www.ejournal.itn.ac.id/index.php/jati/article/view/1248, diakses pada 13 November 2026",
+    "S3": "Dodi Prasetio (2022), Respon Pertumbuhan dan Hasil Tanaman Melon (Cucumis melo L.) Terhadap Pemberian Bokashi Kulit Nenas Dan Poc Daun Lamtoro, https://jurnalmahasiswa.umsu.ac.id/index.php/jimtani/article/view/1536, diakses pada 13 November 2026"
+  },
+  "aturan": [
+    {
+      "id": "R1",
+      "jika": ["ada daun yang menggulung dalam 1 pohon", "pucuk tanaman kering"],
+      "mode": "dan",
+      "maka": "gejala awal kutu daun",
+      "sumber": "S2"
+    },
+    {
+      "id": "R2",
+      "jika": ["gejala awal kutu daun", "terdapat getah cairan yang mengkilap pada akar"],
+      "mode": "dan",
+      "maka": "Kutu Daun Ringan",
+      "sumber": "S2"
+    },
+    {
+      "id": "R3",
+      "jika": ["daun menguning karena terendam air", "pertumbuhan tanaman terhambat"],
+      "mode": "dan",
+      "maka": "Stress Genangan dan Defisiensi Hara",
+      "sumber": "S3"
+    }
+  ]
+}
